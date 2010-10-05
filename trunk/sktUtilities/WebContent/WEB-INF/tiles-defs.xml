@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+
+<!--
+     This is a blank Tiles definition file with a commented example.
+-->
+
+<tiles-definitions>
+
+    <definition name="welcome.page" path="/pages/welcome.jsp">
+    </definition>
+	
+	 <definition name="page.layout" path="/layout/layout.jsp">
+        <put name="title"  value="Sandhi Engine" />
+        <put name="header" value="/layout/header.jsp" />
+        <put name="body"   value="" />
+        <put name="footer" value="/layout/footer.jsp" />
+    </definition>
+
+	 <definition name="sandhi.page" extends="page.layout" >
+			<put name="title"  value="Sandhi Engine" />
+			<put name="body"   value="/pages/sandhi.jsp" />
+	 </definition>
+
+	
+	 <definition name="pratyahara.page" extends="page.layout" >
+        <put name="title"  value="Pratyahara Decoder" />
+        <put name="body"   value="/pages/pratyahara.jsp" />
+	 </definition>
+	
+	 <definition name="transliterator.page" extends="page.layout" >
+        <put name="title"  value="Transliterator" />
+        <put name="body"   value="/pages/transliterator.jsp" />
+	 </definition>	
+	
+	 <definition name="transliterate.via.file.page" extends="page.layout" >
+        <put name="title"  value="Transliterator via File" />
+        <put name="body"   value="/pages/transliteratorViaFile.jsp" />
+	 </definition>	
+	
+	 <definition name="dictionary.page" extends="page.layout" >
+        <put name="title"  value="Sanskrit English dictionary" />
+        <put name="body"   value="/pages/dictionary.jsp" />
+	 </definition>	
+	
+	
+	 <definition name="metric.analyzer.page" extends="page.layout" >
+        <put name="title"  value="Metric Analyzer - chhando-vicitti" />
+        <put name="body"   value="/pages/metricAnalyzer.jsp" />
+	 </definition>	
+	
+	 <definition name="download.page" extends="page.layout" >
+        <put name="title"  value="Downloadables for Desktop" />
+        <put name="body"   value="/pages/downloadable.jsp" />
+	 </definition>	
+	 
+	 <definition name="ebooks.page" extends="page.layout" >
+        <put name="title"  value="Sanskrit eBooks" />
+        <put name="body"   value="/pages/eBooks.jsp" />
+	 </definition>	
+	
+</tiles-definitions>
