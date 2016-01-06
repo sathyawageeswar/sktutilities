@@ -1,0 +1,1 @@
+A Set of Utilities for Sanskritists including the Monier Williams Dictionary, ITRANS-SLP-Harvard Kyoto Devanagari Transliterator, Sandhi Engine, Metric Analyzer etc.
